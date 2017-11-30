@@ -92,9 +92,9 @@
 							</article>
 							
 							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/fulls/08.jpg" class="image fit"><img src="images/thumbs/08.jpg" alt="" /></a>
-                                <h3><a href="https://github.com/gdgmait">GDG-MAIT</a></h3>
-								<p>Member of core team at Google Developers Group Of Maharaja Agrasen Institute Of Technology. Working as a mentor for competitive programming and full stack web developer in Django(Framework of Python).</p>
+								<a href="images/fulls/10.jpg" class="image fit"><img src="images/thumbs/10.jpg" alt="" /></a>
+                                <h3><a href="https://codingblocks.com/">Coding Blocks</a></h3>
+								<p>Successfully completed my Summer training in Java under Mr. Sumeet Malik Founding member of CodingBlocks.</p>
 							</article>
                             
 							<article class="6u 12u$(xsmall) work-item">
@@ -103,20 +103,38 @@
 								<p>Working as a mentor for competitive programming. Teaching a class of strength of more than 50 students. Teaching algorithms and all basic to advance techniques to crack a competitive programming contest.</p>
 							</article>
 							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/fulls/10.jpg" class="image fit"><img src="images/thumbs/10.jpg" alt="" /></a>
-                                <h3><a href="https://codingblocks.com/">Coding Blocks</a></h3>
-								<p>Successfully comleted my Summer training in Java under Mr. Sumeet Malik Founding member of CodingBlocks.</p>
+								<a href="images/fulls/08.jpg" class="image fit"><img src="images/thumbs/08.jpg" alt="" /></a>
+                                <h3><a href="https://github.com/gdgmait">GDG-MAIT</a></h3>
+								<p>Member of core team at Google Developers Group Of Maharaja Agrasen Institute Of Technology. Working as a mentor for competitive programming and full stack web developer in Django(Framework of Python).</p>
 							</article>
 							
                     </div>
-
+                    
 					</section>
 
                 
                 
                 
-                
-                
+
+            <?php 
+                if(isset($_POST['submit'])){
+                    $to = "paritoshmait@gmail.com";
+                    $from = $_POST['email']; 
+                    $first_name = $_POST['first_name'];
+
+                    $subject = "Form submission";
+
+                    $message = $first_name . " " . " wrote the following:" . "\n\n" . $_POST['message'];
+
+
+                    $headers = "From:" . $from;
+
+                    mail($to,$subject,$message,$headers);
+
+                    echo "Mail Sent. Thank you " . $first_name . ", I will contact you shortly.";
+
+                    }
+            ?>
                 
                 
                 
@@ -133,19 +151,7 @@
 					<section id="three">
 						<h2>Get In Touch</h2>
 						<p>There is nothing better than a message from a complete stranger. It is an opportunity to get to know someone and make a new friend.If you're interested in me or what I do, get in touch.</p>
-						<div class="row">
-							<div class="8u 12u$(small)">
-								<form method="post" action="#">
-									<div class="row uniform 50%">
-										<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-									</div>
-								</form>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</div>
+						<div class="typeform-widget" data-url="https://paritoshaggarwal.typeform.com/to/rhADfN" style="width: 100%; height: 500px;" > </div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;" > powered by <a href="https://www.typeform.com//?utm_campaign=rhADfN&amp;utm_source=typeform.com-11419590-Basic&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-poweredbytypeform&amp;utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
 							<div class="4u$ 12u$(small)">
 								<ul class="labeled-icons">
 									<li>
@@ -164,7 +170,6 @@
 									</li>
 								</ul>
 							</div>
-						</div>
 					</section>
 
 				<!-- Four -->
@@ -489,6 +494,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 			</div>
 
+        
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
@@ -496,7 +502,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
                         <li><a href="https://github.com/ParitoshAggarwal" class="icon fa-github"><span class="label">Github</span></a></li>
 						<li><a href="https://www.youtube.com/channel/UCzq2BkmE5Lzhyqdvwt6y48A" class="icon fa-youtube"><span class="label">YouTube</span></a></li>
 						<li><a href="https://www.linkedin.com/in/paritosh-aggarwal-9b6a3013b/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+						<li><a href="https://www.codechef.com/users/paritosh_code" class="icon fa-desktop"><span class="label">Codechef</span></a></li>
 					</ul>
 					<ul class="copyright">
 						<li>&copy; Paritosh Aggarwal</li><li>All rights reserved.</li>
